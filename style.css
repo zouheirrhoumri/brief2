@@ -7,13 +7,17 @@
     margin-top: 0%;
 
 }
+
+.navbar li a, .logo {
+    font-family: 'Ruda', sans-serif;
+}
 body{
     
     margin: 0;
     padding: 0;
 
 }
-.div0 {
+.div0, .div8 {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(./img/back1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,27 +27,39 @@ body{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    margin-bottom: 5%;
 }
 
-.div0 h1{
+.div0 h1, .div8 h1 {
     font-size: 38px;
     color: white;
     border-bottom: 3px solid yellow;
     margin-top: 10%;
+    font-family: 'Quattrocento', sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px; 
 }
 
-.div0 p {
+.div0 p, .div8 p {
     font-size: 20px;
     color: white;
     margin: 0; 
     width: 50%;
     text-align: center;
+    font-family: 'Ruda', sans-serif;
 }
 
 .div0 img {
     width: auto;
     height: auto;
 }
+
+.div8 img {
+    width: auto;
+    height: auto;
+    margin-top: 400px;    
+}
+
 
 .div1 {
     background-color: black;
@@ -203,7 +219,8 @@ body {
     margin-bottom: 10%;
 }
 .z1{
-   margin-left: 13%;
+    margin-top: 500px;
+
 }
 .men {
     color: aliceblue;
@@ -212,6 +229,7 @@ body {
     border-bottom: 5px solid yellow;
     width: 30%;
     margin-left:33%;
+    z-index: 2;
 }
 .order1{
     display: flex;
@@ -220,6 +238,7 @@ body {
     gap: 20%;
     margin-left: 5%;
     margin-top: 15%;
+    z-index: 2;
 }
 .order1 div{
     display: flex;
@@ -228,6 +247,7 @@ body {
 }
 .order1 h1{
     font-size: 60px;
+    font-family: 'Purple Purse', sans-serif;
 }
 .order1 h4{
     font-size: 30px;
@@ -241,10 +261,10 @@ body {
     justify-content: center;
     flex-shrink: 0;
     cursor: pointer;
-    outline: 1px solid blue;
+    outline: 1px solid #4CACF2;
     text-align: center;
     margin-top: 5%;
-    color: blue;
+    color: #4CACF2;
 }
 .para{
     margin-top: 5%;
@@ -304,29 +324,44 @@ form{
     align-items: center;
     margin-bottom: 1%;
 }
+
+input, textarea, .b {
+    font-family: 'Ruda', sans-serif;
+}
+
 input{
     color:rgb(0, 0, 0);
     background-color: rgb(134, 138, 142);
-    padding: 1% 5% ;
+    padding: 1%;
     margin-bottom: 1%;
     margin-top: 1%;
     border-radius: 10px;
-    text-align: center;
-  
+    /* text-align: center; */
+    width: 23%;
+    
 }
 textarea{
     background-color: rgb(134, 138, 142);
-    padding: 3% 3% ;
+    padding: 1% 1%;
     border-radius: 10px;
-    text-align: center;
+    /* text-align: center; */
     margin-top: 1%;
+    width: 23%;
     
 }
 .b{
     padding: 1% 3%;
     color: black;
     cursor: pointer;
+    background-color: white;
+    width: 10%;
+    text-align: center;
 }
+
+::placeholder {
+    color: white; 
+}
+
 .contact{
     text-align: center;
     font-size: 60px;
@@ -335,4 +370,25 @@ textarea{
     width: 20%;
     margin-left: 40%;
     margin-bottom: 3%;
+}
+.lala{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    background-image: url(img/back1.jpg);
+    text-align: center;
+    height: 79vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lala h1{
+    margin-top: 5%;
+    font-size: 30px;
+    border-bottom: 3px solid yellow;
+    width: 20%;
+    margin-left: 40%;
+}
+.lala p{
+    margin-top: 2%;
+    font-size: 20px;
 }
